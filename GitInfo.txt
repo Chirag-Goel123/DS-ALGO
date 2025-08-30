@@ -11,3 +11,10 @@ VCS:
   In stagin area, we can cross-check our changes before commit.
 
 4 git commit :
+  
+
+5 git log 
+  Will provide the log of all the commit.
+
+6 git diff 
+  Will provide the comparison of 2 file.
