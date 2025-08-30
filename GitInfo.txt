@@ -65,3 +65,13 @@ VCS:
                             git checkout branchA
                 Merge :
                             git merge main
+
+13 Fork : Like contributing in the opensource.
+    1 Fork the project.
+    2 Do the change
+    3 Raise the PR to that project
+    4 We can sync the fork as well
+
+14 Git ignore :
+    1 create a file .gitignore
+    2 Add the files info which you do not want to commit.
