@@ -42,3 +42,12 @@ VCS:
      
 	Note : 	In soft : Uncommit ho jaega but wrong changes rhengye.
 		In Hard : Uncommit ho jaega but changes hat jaengye..
+
+
+10 Filter in git log command : Logging in Git
+    -> git log -p -1 
+       To see the last one commit and -p means patch to see the difference also
+    -> git log --stat
+        To see the summary about the changes and only the files which are changed.
+    -> git log --pretty=oneline
+        To see the log in one line
