@@ -51,3 +51,17 @@ VCS:
         To see the summary about the changes and only the files which are changed.
     -> git log --pretty=oneline
         To see the log in one line
+
+11 git pull
+
+12 Git Branch and Merge
+    1 Create a new branch : git branch New-Branch-name
+    2 Checkout :            git checkout New-Branch-name
+    3 Merge from main to branchA:
+                Pull from main:
+                            git checkout main       
+                            git pull
+                Checkout to branchA :
+                            git checkout branchA
+                Merge :
+                            git merge main
