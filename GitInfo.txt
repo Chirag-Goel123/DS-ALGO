@@ -35,4 +35,10 @@ VCS:
   -> If in staged area :  Bring back to staged area and restore it.
 	git restore --staged <fileName>
 	git restore <fileName>
-  -> Already in staged area and did the wrong changes again..
+  -> If in the commit area :
+	git reset --soft HEAD^
+		OR
+	git reset --hard HEAD^
+     
+	Note : 	In soft : Uncommit ho jaega but wrong changes rhengye.
+		In Hard : Uncommit ho jaega but changes hat jaengye..
