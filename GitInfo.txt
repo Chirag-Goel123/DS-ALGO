@@ -10,11 +10,29 @@ VCS:
   So git will add this file into the staging area.
   In stagin area, we can cross-check our changes before commit.
 
-4 git commit :
-  
+4 git commit -m ""
+  To put the changes in the local Git Repo
 
 5 git log 
   Will provide the log of all the commit.
 
 6 git diff 
   Will provide the comparison of 2 file.
+
+7 To check the changes in one File only which we did in the previous commit..
+  git log 
+  -> Take the commit id
+  git show commitid:fileName
+
+8 To check the changes in all the files which we did 
+  git log
+  -> Take the commit id
+  git checkout comitId -- *
+  -> If we want to go to latest changes : git checkout master(branchName) -- *
+
+9 git restore :
+  -> If in unstaged area : git restore <fileName>
+  -> If in staged area :  Bring back to staged area and restore it.
+	git restore --staged <fileName>
+	git restore <fileName>
+  -> Already in staged area and did the wrong changes again..
