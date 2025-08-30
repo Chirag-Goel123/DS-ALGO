@@ -1,0 +1,6 @@
+VCS:
+1 git config --global user.name "abc"
+  git config --global user.email "abc.com"
+  
+2 git init
+ 
