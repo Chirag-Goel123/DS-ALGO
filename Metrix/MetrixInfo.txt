@@ -1,0 +1,1 @@
+-> For every diagonal, we have same value for [row-column]
