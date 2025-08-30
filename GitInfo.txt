@@ -3,4 +3,11 @@ VCS:
   git config --global user.email "abc.com"
   
 2 git init
- 
+
+3 git add : 
+  File changes are done.
+  Ab Git app isko track kro.
+  So git will add this file into the staging area.
+  In stagin area, we can cross-check our changes before commit.
+
+4 git commit :
