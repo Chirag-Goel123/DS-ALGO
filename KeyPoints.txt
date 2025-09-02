@@ -1,0 +1,4 @@
+HEAP :
+-> MAX_HEAP : PriorityQueue<double[]> pq=new PriorityQueue<>((a,b)-> Double.compare(b[0],a[0]));
+-> MIN_HEAP : PriorityQueue<double[]> pq = new PriorityQueue<>((a, b) -> Double.compare(a[0], b[0]));
+-> FX : add,poll(remove from top),peek(),isEmpty(),size(),contains(),remove()
