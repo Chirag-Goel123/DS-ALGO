@@ -113,3 +113,47 @@ class Solution {
         }
     }
 }
+
+// Approach 2 : 
+class Solution {
+    public int numberOfPairs(int[][] points) {
+        
+        int n=points.length;
+        int result=0;
+        Arrays.sort(points , (a,b)->
+        {
+            if(a[0]==b[0])
+            {
+                return b[1]-a[1];
+            }
+            return a[0]-b[0];
+        });
+
+        for(int i=0;i<points.length;i++)
+        {
+            for(int j=0;j<points[0].length;j++)
+            {
+                System.out.print(points[i][j]+" ");
+            }
+            System.out.println();
+        }
+
+        for(int i=0;i<points.length;i++)
+        {
+            int maxY=Integer.MIN_VALUE;
+            for(int j=i+1;j<points.length;j++)
+            {
+                if(points[j][1] > points[i][1])
+                {
+                    continue;
+                }
+                if(points[j][1]>maxY)
+                {
+                    result++;
+                    maxY=points[j][1];
+                }
+            }
+        }
+        return result;
+    }
+}
