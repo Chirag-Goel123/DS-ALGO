@@ -5,6 +5,7 @@ class MyComparator implements Comparator<Integer>
         // int = -ve -> a comes first than b
         // int = +ve -> b comes first than a
         // int = 0 -> equal
+        return a-b;
     }
 }
 

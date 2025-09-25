@@ -6,3 +6,30 @@ HEAP :
 
 Array:
 -> Custom Sorting
+
+
+Metrix :
+-> For every diagonal, we have same value for [row-column]
+
+Map :
+
+1) Iterate: HashMap<Integer,Integer> map;
+    1.1) map.entrySet();
+    1.2) Map.Entry<Integer,Integer> entry : 
+    1.3) entry.getKey() , entry.getValue()
+
+Maths : 
+1)  Eucledian Way :
+    public int gcd(int a,int b)
+    {
+        return b==0?a:gcd(b,a%b);
+    }
+
+2) LCM : 
+    6 = 2*3
+    8 = 2*4
+    LCM=2*3*4 = Jo common hai ek baar bakki bhi multiply..
+    GCD = Jo common hai bs unka product.
+
+
+DP : Recursion , Memorization , Bootom Up [Grid]
