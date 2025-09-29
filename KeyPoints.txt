@@ -5,7 +5,7 @@ HEAP :
 
 
 Array:
--> Custom Sorting
+-> Custom Sorting : (a,b) -> [-ve a-First , +ve b-First , 0 = Both-equal]
 
 
 Metrix :

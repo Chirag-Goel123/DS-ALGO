@@ -1,0 +1,25 @@
+1) Array
+2) String
+3) Maths and Basic
+4) Segment Tree
+5) Recursion        : GrandFather of DP, BackTracking, Graph , Tree
+6) Queue
+7) MonoTonic 
+8) Bit Manipulation
+9)  DP
+10) N-Ary Tree
+11) Graph
+12) Binary Search
+13) Design This
+14) HashMap
+15) BackTracking
+16) Heap
+17) Stack
+18) Trie
+19) 2 Pointer
+20) Sorting
+21) Linked List
+22) Greedy
+23) Sliding Window
+24) B-Tree
+25) System Design

@@ -57,7 +57,10 @@ class Solution {
 }
 
 // Approch 3 : Bottom Up
-
+2                   11
+3 4                 9 10
+6 5 7       ->      7 6 10
+4 1 8 3             4 1 8 3
 class Solution {
     public int minimumTotal(List<List<Integer>> triangle) {
         List<List<Integer>> gridInteger=triangle;

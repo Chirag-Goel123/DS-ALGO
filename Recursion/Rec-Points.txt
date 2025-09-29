@@ -1,0 +1,35 @@
+1) Function calling itself.
+2) Having a base case and fx call.
+3) How to write Base Case?
+    EX :factorial(n)
+    Base Case mein vo sabse choti value socho jiska ans apko pata hai. (0!= 1, 1!=1)
+
+4) Benefit of Recurion Tree : TC + SC
+
+5) TC of some function :
+    5.1) Fact(n) 
+        TC -> Fact (n-1) -> Fact(n-2) -> Fact (n-3) ...Fact(n)    // O(n)
+        SC -> Depth of Recursion Tree // O(n)
+    
+    5.2) Fib : Fib(n)
+                |
+            -----------------
+            Fib(n-1)    Fib(n-2)
+        
+        Tc : 2^n    : T(n)=T(n-1)+T(n-2)+c // Exponential
+        SC : O(n)
+
+
+    5.3) Binary Search : O(n) -> O(n/2) -> O(n/4)
+        TC : O(log n)
+        SC : O(log n)
+    
+    5.4) In-Order Traversal BT :
+        n-nodes visit: O(n)
+        SC : O(depth of Tree)
+
+6) Tail Recursion : Stack Space Optimised..
+    return fx(5,ans);
+    Compiler un-ncessary call stack nhi krega..
+    return 1+f(5,ans); // No Tail recursion as we are adding 1 after the recursion
+    
