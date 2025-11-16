@@ -30,6 +30,8 @@ Maths :
     8 = 2*4
     LCM=2*3*4 = Jo common hai ek baar bakki bhi multiply..
     GCD = Jo common hai bs unka product.
+    Note : GCD(x,1) -> 1.
+    TC of GCD : log(Max of 2 number (a,b)) 
 
 
 DP : Recursion , Memorization , Bootom Up [Grid]

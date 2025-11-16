@@ -2,7 +2,7 @@
 2) Having a base case and fx call.
 3) How to write Base Case?
     EX :factorial(n)
-    Base Case mein vo sabse choti value socho jiska ans apko pata hai. (0!= 1, 1!=1)
+    Base Case mein vo sabse choti value socho jiska ans apko pata hai. (Fact(0)= 1,  Fact(1)=1)
 
 4) Benefit of Recurion Tree : TC + SC
 
@@ -18,17 +18,22 @@
         
         Tc : 2^n    : T(n)=T(n-1)+T(n-2)+c // Exponential
         SC : O(n)
+        Logic : Each cell has 2 options. And total cell is : N..So 2^N
 
-
-    5.3) Binary Search : O(n) -> O(n/2) -> O(n/4)
+    5.3) 2D cell wale mein : Up, Down, Bottom , Right :
+        Each cell has 4 options and total cells are n*n.
+        TC : O(4^(n*n))
+        SC: O(Dpeth of Recursion tree)
+        
+    5.4) Binary Search : O(n) -> O(n/2) -> O(n/4)
         TC : O(log n)
         SC : O(log n)
     
-    5.4) In-Order Traversal BT :
+    5.5) In-Order Traversal BT :
         n-nodes visit: O(n)
         SC : O(depth of Tree)
 
-6) Tail Recursion : Stack Space Optimised..
+6) Tail Recursion : Return krte time no extra thing we are doing , Stack Space Optimised..
     return fx(5,ans);
     Compiler un-ncessary call stack nhi krega..
     return 1+f(5,ans); // No Tail recursion as we are adding 1 after the recursion

@@ -2,7 +2,7 @@
 2) String
 3) Maths and Basic
 4) Segment Tree
-5) Recursion        : GrandFather of DP, BackTracking, Graph , Tree
+5) Recursion        (18 videos): GrandFather of DP, BackTracking, Graph , Tree     
 6) Queue
 7) MonoTonic 
 8) Bit Manipulation
@@ -10,10 +10,10 @@
 10) N-Ary Tree
 11) Graph
 12) Binary Search
-13) Design This
+13) Design This     : 2253,3408,3484,3508,1912
 14) HashMap
 15) BackTracking
-16) Heap
+16) Heap                : 407. Trapping Rain Water II
 17) Stack
 18) Trie
 19) 2 Pointer
