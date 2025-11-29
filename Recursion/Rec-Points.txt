@@ -37,4 +37,16 @@
     return fx(5,ans);
     Compiler un-ncessary call stack nhi krega..
     return 1+f(5,ans); // No Tail recursion as we are adding 1 after the recursion
+
+7) Problem where you see : Generate/All Combinations, Generate/All Permutation : Trying think of BackTracking.
+
+8) Permutation 1 [return void, par-> [nums,track,list,res]]
+Note :  This help -> ets II,subsets, Subs Permutations, Permutations II,  Combination Sum, Combination Sum II
+
+
+
+Pending Video :
+1) Quickort : 9
+2) Flatten a LinkedList : 12
+
     

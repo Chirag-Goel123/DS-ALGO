@@ -1,0 +1,3 @@
+1) Agar K se divide krna hai to posible remainder [0 to k-1] hi hongye.
+
+2) Max-Sum-Sub-Array : Kadane's Algo. [Yah to khud se apna bna lo nhi to peeche wale mein add ho jao].

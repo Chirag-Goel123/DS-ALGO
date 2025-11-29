@@ -35,3 +35,6 @@ Maths :
 
 
 DP : Recursion , Memorization , Bootom Up [Grid]
+
+Note :
+1) Directly Convert set to List -> List<Integer> list=new ArrayList<>(set);
