@@ -1,0 +1,22 @@
+Maths : 
+
+1) LCM : 
+    6 = 2*3
+    8 = 2*4
+    LCM=2*3*4 = Jo common hai ek baar bakki bhi multiply..
+    GCD = Jo common hai bs unka product.
+    Note : GCD(x,1) -> 1.
+    TC of GCD : log(Max of 2 number (a,b)) 
+
+2)  GCD :Eucledian Way :
+    public int gcd(int a,int b)
+    {
+        return b==0?a:gcd(b,a%b);
+    }
+
+3: How to find the factors of number:
+    1: They are always in pairs. If num%i==0 , is a factor than num/i is also the factor.
+    21%3==0 -> 3 is a factor.
+    21/3=7  -> 7 is also a factor
+
+    2: Loop till Math.sqrt(num)

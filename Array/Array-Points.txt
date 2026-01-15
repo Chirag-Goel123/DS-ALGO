@@ -1,3 +1,50 @@
 1) Agar K se divide krna hai to posible remainder [0 to k-1] hi hongye.
 
 2) Max-Sum-Sub-Array : Kadane's Algo. [Yah to khud se apna bna lo nhi to peeche wale mein add ho jao].
+
+3) Difference Array Technique : For Range Problems
+    Story : Imagine you have a friend and you asked him to add the number in the array.
+            He choose the starting point correct but he stop's only at the end.
+            
+                      0 1 2 3 4
+            Array -> [0,0,0,0,0]
+            You asked add 5 from 0 to 2. [0,2,5].
+            What He did :
+                      0 1 2 3 4
+            Array -> [5,5,5,5,5].
+            So, you said.Okay. No issues. You make [3,4,-5] now.
+                      0 1 2 3 4
+            Array -> [5,5,5,-5,-5].
+
+    Intuition : 
+            Req -> [1,3,5]. [He chooes the starting point correct]
+                    At 1 , he adds 5 and at ending point +1 , he add -1*5. 
+                      0 1 2 3 4
+            Array -> [0,5,0,0,-5].      
+
+            Ans will be cumulative sum.
+
+    Step 1 : [L,R,X] -> arr[L] -> +X , arr[L+1] -> -X. [ L+1 <arr.length] 
+    Step 2 : Cumulative Sum.
+
+    Code :
+            for(int[] query : queries)
+            {
+                int L=query[0];
+                int R=query[1];
+                int x=query[2];
+                arr[L]=;
+                if(R+1<n)
+                {
+                    arr[R+1]=-1*x;
+                }
+            }
+            int sum=arr[0];
+            for(int i=1;i<n;i++)
+            {
+                arr[i]+=sum;
+            }
+    
+    TC : Range Updte : O(1) + Cumulative Sum : O(n).
+            O(n)
+    Ex : Shifting Letters II
