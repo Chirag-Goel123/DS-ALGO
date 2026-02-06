@@ -48,3 +48,29 @@
     TC : Range Updte : O(1) + Cumulative Sum : O(n).
             O(n)
     Ex : Shifting Letters II
+
+4) 2 Pointer Approach : 
+   1) Agar element manga hai to , we can also do sorting. And apply 2 pointer.
+   2) Agar index manga hai , no sorting.
+
+
+5) How to find the 2 smallest number in an array :
+        int firstMin=Integer.MAX_VALUE;
+        int secondMin=Integer.MAX_VALUE;
+        for(int i=0;i<nums.length;i++)
+        {
+            if(nums[i]<firstMin)
+            {
+                secondMin=firstMin;
+                firstMin=nums[i];
+            }
+            else if(nums[i]<secondMin)
+            {
+                secondMin=nums[i];
+            }
+        }
+
+6) Sliding Window.
+
+7) Rotate image : Transpose (Row ko column bna do) + reverse(row).
+8) Group Anangram : Agar anagram ko sort krein to same string banta hai..
