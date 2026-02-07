@@ -74,3 +74,14 @@
 
 7) Rotate image : Transpose (Row ko column bna do) + reverse(row).
 8) Group Anangram : Agar anagram ko sort krein to same string banta hai..
+
+9) Diagonal Related info :
+    1) Number of diagonal = row+col-1.
+    2) Traverse diagonal : Check where you need to traverse. Either(i+j) or (i-j) value is same for diagonal.
+
+
+10) List Functions:
+    1) list.remove(idx); // Vo index delete ho kar, left shift ho jaega.
+    2) Collections.reverse(list);
+    3) list.addAll(list2);
+    4) Collections.sort(list);
