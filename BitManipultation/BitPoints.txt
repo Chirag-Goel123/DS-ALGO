@@ -1,0 +1,8 @@
+1) Calculate no. of '1's'
+    int count=0;
+    while(num!=0)
+    {
+        count+=num&1;   // Logical And with 1
+        num>>=1;        // Right Shift
+    }
+    return count;

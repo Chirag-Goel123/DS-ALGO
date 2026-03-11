@@ -23,3 +23,6 @@
 23) Sliding Window
 24) B-Tree
 25) System Design
+
+26) Solid Principle
+27) Design Pattern

@@ -1,1 +1,20 @@
 1) Number of substring = n*(n+1)/2
+2) Agar hme koi order maintain krna hai yah char delete krne hai to stack ko try kr skte hai.
+
+3) Integer.parseInt()
+    Convert String to integer. Integer.parseInt();
+    1) Integer.parseInt("10") -> 10
+
+    2) Integer.parseInt("10",10) -> 10.
+        second paremeter is for defining the base value.
+        10 -> Decimal value and 2 is for binary.
+    
+
+    3) Integer.parseInt("10",2) -> 2.
+        As, it converts the string to binary value.
+
+4) Integer.toBinaryString(int n)
+    1) Converts the intger to it binary string representation without leading zeros.
+    Ex : Integer.toBinaryString(5) -> "101"
+
+5) Total number of binary String = 2^n

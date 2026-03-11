@@ -1,6 +1,13 @@
-1) Agar K se divide krna hai to posible remainder [0 to k-1] hi hongye.
+1) Divisible by k.
+    1) Agar K se divide krna hai to posible remainder [0 to k-1] hi hongye.
+    2)  a b c d e f g h 
+        if sum(a to g) , after divide by k -> give rem = x
+        and sum(a to c) , after divide by k -> also gives rem = x 
+        which means the remaining portion sum i.e sum(d to g) is Divisible by k.
+        Reference -> 974 Subarray Sums Divisible by K
 
 2) Max-Sum-Sub-Array : Kadane's Algo. [Yah to khud se apna bna lo nhi to peeche wale mein add ho jao].
+                        TC of Kadane's -> O(n)
 
 3) Difference Array Technique : For Range Problems
     Story : Imagine you have a friend and you asked him to add the number in the array.
@@ -85,3 +92,32 @@
     2) Collections.reverse(list);
     3) list.addAll(list2);
     4) Collections.sort(list);
+
+11) Subsequence : Continous hona jaruri nahi hai.
+
+12) Custom Sorting : (a,b) -> [-ve a-First , +ve b-First , 0 = Both-equal]
+    Integer.compare(a,b);
+
+13) Total Number of sub-array -> n*(n+1)
+                                --------
+                                    2
+                                    
+14) Shortest Path : Either Dijakstra / Either BFS.
+    BFS : Queue<Integer> queue=new ArrayDeque<>();
+          queue.add();
+          while(queue.size()>0)
+          {
+            // queue.remove();
+          }
+          return res;
+15) Array List comparison :
+    1) new ArrayList<>();
+    2) new LinkedList<>();
+    3) new 
+
+16) Helper Function :
+    1) Convert int to String -> String.valueOf(1);  // Output -> "1"
+
+
+17) N^2 -> (10^5)*(10^5) = 10^10. (10^8) se jyada nahi kar skte. Think of doing it 
+    in nlogn / O(n)
