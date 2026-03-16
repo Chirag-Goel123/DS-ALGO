@@ -117,7 +117,75 @@
 
 16) Helper Function :
     1) Convert int to String -> String.valueOf(1);  // Output -> "1"
-
+    2) Convert int to BinaryString -> Integer.toBinaryString(5); // Output -> 101
+    3) Convert binary to int -> Integer.parseInt("binaryString", 2); // 2 is radix.
+ 
 
 17) N^2 -> (10^5)*(10^5) = 10^10. (10^8) se jyada nahi kar skte. Think of doing it 
     in nlogn / O(n)
+
+
+18) Binary Search :
+    1) If we want to find min of max problems. Like sabhi max mein se min nikalo.
+    2) Same for max from min. 
+    3) Jis pr answer nikalna hai uspar Binary Search Lgangye.
+    4) EX : 3296
+
+19) Pascal Triangle :
+    First and last column value of every row is 1.
+    1
+    1 1
+    1 2 1
+    1 3 3 1
+    1 4 6 4 1
+
+    Application of it : 4C2 = 4th Row and 2nd column of pascal triangle.
+
+
+20) Kth Largest Value, Kth Smallest Value : Use Heap.
+    Smallest Pucha Hai -> Max_Heap.
+    Largest Pucha Hai  -> Min_Heap.
+    By default -> Min_Heap.
+    Min_Heap -> PriorityQueue<Integer> pq=new PriorityQueue<>();
+    Max_Heap -> PriorityQueue<Integer> pq=new PriorityQueue<>(Collections.reverseOrder());
+
+    If we use Pair, instead of Integer. Than we need to pass the comparable.
+    PriorityQueue<Pair> pq=new PriorityQueue<>((a,b)->{
+            if(a.count<b.count)
+            {
+                return 1;
+            }
+            else if(a.count==b.count)
+            {
+                return b.row-a.row;
+            }
+            else
+            {
+                return -1;
+            }
+        });
+
+
+29) Modulo :
+    (a+b)%M = (a%M + b%M) % M
+    (a-b)%M = (a%M - b%M +M); // To avoid -ve number.
+    Note : We can not directly divide with the modulo.
+    (a/b)%M = a* Pow(b,M-2) % M
+
+30) Slow-Fast Technique : (Hair and Tortoise)
+    When to use it?
+        Jab Duplicacy ki baat ho or jo values hai na vo indexes ki tarah bhi kam kr sakti ho.
+    
+    Technique : Slow, Fast =0.
+    Step 1 -> First detect the cycle.
+            Increment slow by 1 and Fast by 2.
+            If they meet than, there is for sure cycle is present.
+    
+    Step 2-> If cycle detected, but we need to find the starting point of the cycle.
+            Put slow to the starting point of array/LinkedList. 
+            Do not do changes in the fast postion.
+            Increment both slow and fast by 1.
+            The point where they meet is the starting point. 
+    Ref : 287
+
+    
